@@ -1,0 +1,9 @@
+#selector
+    %a= button_to "Rock", single_throw_path(:option => "Rock"), method: :post
+    %a= button_to "Paper", single_throw_path(:option => "Paper"), method: :post
+    %a= button_to "Scissor", single_throw_path(:option => "Scissor"), method: :post
+%div#result
+    - toss = generate_throw()
+    - winner = get_winner(toss, @user_toss)
+    - if (flash[:notice] != "" )
+        %a= "Computer chose #{ toss }"

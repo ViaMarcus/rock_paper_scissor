@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RockPaperScissor</title>
+    <title>Rock, Paper, Scissor</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+    <%= content_tag(:a, value, class: key)%>
+    <% end %>
     <%= yield %>
   </body>
 </html>

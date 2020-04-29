@@ -15,6 +15,7 @@ I want it to be fair
 As a user,
 In order to be challenged
 I want the computer to be good
+/^(.+).+(.)(\1)/ then grab group 2 as next throw :)
 
 As a user,
 In order to enjoy my stay
@@ -23,6 +24,14 @@ I want interactive graphics
 As a user,
 In order to not get bored
 I want to be able to play some different variants of the game
+
+As a user,
+In order to play an unbiased game
+I want symmetrical controls
+
+As a user,
+In order to prevent loss due to choice anxiety
+I want the controls to force me choose in time
 
 Multiplayer
 
@@ -59,5 +68,7 @@ In order to pass the time while waiting for my friend,
 I want to be able to play the computer in the meantime.
 
 None user story tasks:
-Scaffold
 Make animations/find pictures
+    Make an SVG interactive picture for selecting throw
+Add coveralls?
+Do CD?
